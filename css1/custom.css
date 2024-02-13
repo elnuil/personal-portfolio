@@ -1,0 +1,101 @@
+body {
+    background-color: #f7f5f0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+#content {
+    background-color: white;
+    margin-top: 108px;
+    margin-bottom: 21px;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+.container{
+    margin-bottom: 90px;
+}
+#content::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+}
+form {
+    margin: 30px 0;
+}
+#loaders {
+    text-align: center;
+}
+#loaders img {
+    width: 150px;
+    margin: 0 auto;
+    display: none;
+}
+#resetBtn {
+    float: right;
+}
+.navbar{
+    margin: 0;
+    padding: 0; 
+    display:flex;
+    justify-content:space-between;
+    background-color: #B29279;
+}
+.navbar-container {
+display:flex;
+}
+.navbar-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+display:flex;
+  }
+.navbar-container li {
+    /* float: right; */
+    border-left:1px solid #bbb;
+  }
+  
+.navbar-container  li:last-child {
+    border-left: none;
+  }
+  
+.navbar-container  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navbar-container li a:hover:not(.active) {
+    background-color: #D9D0C1;
+  }
+  
+.navbar-container .active {
+    background-color: #593515;
+  }
+.myname{
+    font-family: 'Birthstone', cursive;
+    font-size: 30px;
+    color: white;
+     padding-left: 20px;
+}
+.backdarken-1{
+    background: #CAB099;
+}
+.footer {
+    padding-top:20px;
+    padding-bottom:20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#B29279 ;
+    color: white;
+    text-align: center;
+ }

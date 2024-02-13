@@ -1,0 +1,781 @@
+/* The CSS Reset Start */
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+  margin:0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f7f5f0;
+}
+
+/* 3. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 4. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 5. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+/* The CSS Reset End */
+
+
+
+/* Menu CSS */
+.navbar{
+    margin: 0;
+    padding: 0; 
+    display:flex;
+    justify-content:space-between;
+    background-color: #B29279;
+    width:100%;
+}
+.navbar-container {
+display:flex;
+}
+.navbar-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flex;
+  }
+  
+.navbar-container  li:last-child {
+    border-left: none;
+  }
+  
+.navbar-container  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ border-left:1px solid #bbb;
+  }
+  
+.navbar-container li a:hover:not(.active) {
+    background-color: #D9D0C1;
+  }
+  
+.navbar-container .active {
+    background-color: #593515;
+  }
+/* Name Logo */
+.myname{
+    font-family: 'Birthstone', cursive;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+}
+
+.index-text {
+  /*
+text-align: center;
+padding: 278px;
+*/
+  font-size: 90px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+h3 {
+text-align: center;
+font-size: 30px;
+color:grey;
+font-style:italic;
+}
+.about {
+text-align: center;
+font-size: 30px;
+padding-top:70px;
+padding-bottom:8px;
+background-color:#f7f5f0;
+border-bottom:solid 6px #B29279;
+}
+
+.icerik {
+  display: flex;
+  text-align: center;
+ padding:80px;
+
+}
+.icerik p{
+float:left;
+padding-top:120px;
+padding-right:30px;
+padding-left:30px;
+font-size: 25px;
+}
+.img{
+box-shadow: 20px 20px 50px 10px grey;
+}
+
+.center {
+display:grid;
+text-align:center;
+/*
+padding-bottom:185px;
+padding-left:80px;
+padding-right:80px; */
+background-color:#f7f5f0;
+}
+
+
+/* Footer CSS */
+.footer {
+   padding-top:20px;
+   padding-bottom:20px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#B29279 ;
+   color: white;
+   text-align: center;
+   flex-shrink: 0; /* Prevent footer from shrinking */
+   margin-top: auto; /* Push footer to the bottom */
+}
+/* MY SKILLS CSS  */
+
+.display
+{
+  position:relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  /* padding-bottom:228px; */
+  
+}
+.orta{
+  display: grid;
+  background-color:lightgrey;
+}
+
+
+/* Skills 2 */
+
+.skill2
+{
+  position:relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill2 .card2
+{
+  position:relative;
+  width:250px;
+  background:#D9D0C1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  border-radius:4px;
+  text-align:center;
+  overflow:hidden;
+  transition:0.5s;
+}
+.skill2 .card2:hover
+{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
+.skill2 .card2:before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:100%;
+  height:100%;
+  background:#D9D0C1;
+  pointer-events:none;
+  z-index:1;
+}
+
+
+.percent2
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  box-shadow: inset 0 0 50px #000;
+  background:#222;
+  z-index:1000;
+}
+.percent2 .num2
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.percent2 .num2 h2
+{
+  color:white;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+.card2:hover .percent2 .num2 h2
+{
+  color:#fff;
+  font-size:60px;
+}
+.percent2 .num2 h2 span
+{
+  color:white;
+  font-size:24px;
+  transition:0.5s;
+}
+.card2:hover .percent2 .num2 h2 span
+{
+  color:white;
+}
+
+
+
+.text2
+{
+  position:relative;
+  color:white;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+.card2:hover .text2
+{
+  color:#fff;
+}
+svg
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#191919;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card2:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 89) / 100);
+  stroke:#B29279;
+}
+
+
+/* Experience */
+
+.deneyim {
+display:flex;
+padding-left:30px;
+padding-top:30px;
+padding-bottom:390px;
+background-color: #f7f5f0;
+padding-left: 320px;
+}
+
+.paragraf {
+display:grid;
+width: 600px;
+padding: 0;
+align-content: center;
+padding-left: 60px;
+}
+.deneyim img {
+width: 200px;
+height: 200px;
+padding-right: 20px;
+padding-left: 80px;
+}
+
+.myfeatures{
+  display:flex;
+  justify-content: space-evenly;
+  padding-left:20px;
+  padding-top:30px;
+}
+.mana{
+  display:grid;
+  align-content: flex-start;
+}
+/* About me CSS */
+.giris-foto{
+  background-color: black;
+  background: url(image/fotom.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin:0;
+}
+header {
+  text-align: center;
+  background: url('image/pexels-ovan.jpg') no-repeat top center ;
+  background-size: cover;
+  /* overflow: hidden; */
+  padding-top: 20px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all .5s;
+}
+ header .profile-image:hover {
+  transform: scale(1.2) ; 
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+.location {
+  background-color: #222;
+  color: yellow;
+}
+.kart {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.kart:hover {
+  border-color: #B29279;
+}
+
+.goal {
+  padding: 0;
+  text-align: center;
+  display:flex;
+  display: flow;
+  justify-content: center;
+  background-color: white;
+}
+
+.goal li {
+  border-radius: 6px;
+  border-color:white;
+  display: inline-block;
+  background: #B19088;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  justify-content:space-around;
+  margin: 0 auto;
+}
+
+  /* Experience Deneme */
+
+  .experiencem{
+    background-color: #f7f5f0;
+  }
+  
+  .poem-field {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+  
+  .poem {
+    padding: 20px;
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+
+  figure {
+    position: relative;
+    background-image: url(image/biente-social-logo.png);
+    background-position: center;
+    width: 320px;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(230, 230, 230, 0.7);
+    color: #666;
+    transition: all 0.35s ease;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+    font-family: "Times New Roman", cursive;
+  }
+  .block {
+
+    position: relative;
+    background-position: center;
+    width: 320px;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(230, 230, 230, 0.7);
+    color: #666;
+    transition: all 0.35s ease;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+    font-family: "Times New Roman", cursive;
+  }
+  .block1 {
+    background-image: var(--bg-image1);
+  }
+  .block2 {
+    background-image: var(--bg-image2);
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+  figure p {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 5px solid #D9D0C1;
+    border-bottom: 5px solid #D9D0C1;
+    font-family: "Times New Roman", cursive;
+    padding: 18px;
+    padding-left: 50px;
+    bottom: 5px;
+    position: absolute;
+    transition: all 0.45s ease;
+  }
+
+ figure figcaption  {
+    transform: translateX(-120%);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 250px;
+    height: 330px;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    bottom: 15px;
+    left: 0px;
+    right: 15px;
+    
+    border: 15px solid #B29279;
+    transition: all 1.5s ease;
+  }
+  
+  figure:hover figcaption {
+    transition: all 1s ease;
+    transform: translate(0, 0);
+  }
+  figure:hover p {
+    transform: translateX(-120%);
+  }
+  
+  figure .author {
+    text-align: right;
+    margin-top: 25px;
+  }
+  
+  h2.intro {
+    text-align: center;
+    background: rgba(190, 158, 167, 0.5);
+    border-bottom: 5px solid rgba(190, 158, 167, 0.9);
+    color: #333;
+    font-size: 13px;
+    font-family: "Times New Roman", cursive;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+    margin-top: 40px;
+    transition: all ease 1s;
+  }
+  h2.intro :hover {
+    background: rgba(190, 158, 167, 0.7);
+    border-bottom: 5px solid rgba(190, 158, 167, 0.8);
+  }
+ 
+/* My Works */
+.resimler{
+   margin: 0 auto;
+   width: 100%;
+   height: 80px;
+   max-width:80px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   transition: all 0.8s ease;
+   background-position: 0px;
+   background-size: 200px;
+}
+.wrapper {
+   width: 100vw;
+   margin: 0 auto;
+   height: 400px;
+   background-color: #161616;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+.content {
+   padding: 95px 80px 75px;;
+   margin: 0 auto;
+   display: flex;
+    background-color: #f7f5f0;
+   font-family: Times New Roman;
+}
+
+.card {
+   width: 100%;
+   max-width: 300px;
+   min-width: 200px;
+   height: auto;
+   background-color: #CAB099;
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+   border: 2px solid #B19088;
+   font-size: 16px;   
+   transition: all 0.3s ease;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   cursor: pointer;
+   padding:0;
+   align-items: center;
+ 
+}
+
+.card .title {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   margin-top: 30px;
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.card img{
+   box-sizing: content-box;
+   width: 85%;
+   height: auto; 
+   display: block; 
+}
+.card .imga{
+   box-sizing: content-box;
+   width: 100%;
+   height: fit-content;
+   margin-top: 20px;
+}
+.card .text-a {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height:0;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hamburger-menu, .dropdown-mobil{
+display:none;}
+
+/* Contact CSS */
+#content {
+  background-color: white;
+  margin-top: 108px;
+  margin-bottom: 21px;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+.container{
+  margin-bottom: 90px;
+}
+#content::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+#header-text {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 100;
+} 
+form {
+  margin: 30px 0;
+}
+#loaders {
+  text-align: center;
+}
+#loaders img {
+  width: 150px;
+  margin: 0 auto;
+  display: none;
+}
+#resetBtn {
+  float: right;
+}
+.backdarken-1{
+  background: #CAB099;
+}
+
+/* MOBİLE Responsive Layout Çalışması */
+@media screen and (max-width: 764px) {
+.index-text{
+  font-size: 78px;
+  padding: 260px 20px 30px 20px;
+}
+  /* Hamburger Menu */
+.hamburger-menu {
+  overflow: hidden;
+  background-color: #C2A18A;
+  position: relative;
+  display: block;
+}
+.hamburger-menu .separator li::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+}
+.hamburger-menu #myHamburger  {
+  display: none;
+}
+  
+.hamburger-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Helvetica Neue;
+  display: block;
+  text-align:center;
+}
+
+.hamburger-menu a:hover {
+  background-color: #593515;
+}
+
+.flex {
+  display: flex;
+  flex-direction:column;
+}
+.navbar-container{
+  display:none;}
+
+.dropdown-mobil {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-right: 11px;
+} 
+ul.separator {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin:0;
+}
+
+ul.separator li:last-child::after {
+  display: none;
+}
+.hamburger-menu .separator li::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+}
+.display {
+  flex-direction: column;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  height: 110%;
+}
+.card:hover .info {
+  min-height: 100%;
+ 
+}
+.card:hover .text-a {
+  transition: all 0.3s ease;
+  opacity: 1;
+  height: 110%;
+}
+.wrapper {
+   height: 700px;
+}
+
+}
+
+
+/* DESKTOP Responsive Layout Çalışması */
+@media screen and (min-width: 765px) {
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+ }
+}
