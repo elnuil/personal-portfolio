@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   margin:0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial';
   background-color: #f7f5f0;
 }
 
@@ -35,9 +35,11 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content:space-between;
     background-color: #B29279;
     width:100%;
+    padding: 10px;
 }
 .navbar-container {
-display:flex;
+   display:flex;
+   margin:auto
 }
 .navbar-container ul {
     list-style-type: none;
@@ -57,7 +59,6 @@ display:flex;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
- border-left:1px solid #bbb;
   }
   
 .navbar-container li a:hover:not(.active) {
@@ -70,22 +71,19 @@ display:flex;
 /* Name Logo */
 .myname{
     font-family: 'Birthstone', cursive;
-    font-size: 30px;
+    font-size: 2em; 
+    font-style: italic;
     color: white;
     padding-left: 20px;
 }
 
 .index-text {
-  /*
-text-align: center;
-padding: 278px;
-*/
   font-size: 90px;
   display: grid;
   text-align: center;
   justify-content: center;
   align-content: center;
-  height: 100vh; /* Adjust height as needed */
+  height: 100vh; 
 }
 
 h3 {
@@ -123,10 +121,6 @@ box-shadow: 20px 20px 50px 10px grey;
 .center {
 display:grid;
 text-align:center;
-/*
-padding-bottom:185px;
-padding-left:80px;
-padding-right:80px; */
 background-color:#f7f5f0;
 }
 
@@ -148,11 +142,14 @@ background-color:#f7f5f0;
 
 .display
 {
+
   position:relative;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-  /* padding-bottom:228px; */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 32px;
+   padding: 105px 12px 0 29px;
+   grid-template-rows: 1fr 1fr 1fr;
+   margin-bottom: 20px;
   
 }
 .orta{
@@ -166,7 +163,7 @@ background-color:#f7f5f0;
 .skill2
 {
   position:relative;
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
 }
 .skill2 .card2
@@ -177,7 +174,7 @@ background-color:#f7f5f0;
   display:flex;
   justify-content:center;
   align-items:center;
-  height:300px;
+  height:240px;
   border-radius:4px;
   text-align:center;
   overflow:hidden;
@@ -228,13 +225,13 @@ background-color:#f7f5f0;
 {
   color:white;
   font-weight:700;
-  font-size:40px;
+  font-size:30px;
   transition:0.5s;
 }
 .card2:hover .percent2 .num2 h2
 {
   color:#fff;
-  font-size:60px;
+  font-size:35px;
 }
 .percent2 .num2 h2 span
 {
@@ -287,8 +284,8 @@ svg circle:nth-child(2)
   stroke-dashoffset:440;
 }
 .card2:nth-child(1) svg circle:nth-child(2)
-{
-  stroke-dashoffset:calc(440 - (440 * 89) / 100);
+{ 
+  stroke-dashoffset: 0;
   stroke:#B29279;
 }
 
@@ -446,7 +443,7 @@ header .profile-image {
     overflow: hidden;
     backface-visibility: hidden;
     box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
-    font-family: "Times New Roman", cursive;
+    font-family: 'Arial', cursive;
   }
   .block {
 
@@ -464,7 +461,7 @@ header .profile-image {
     overflow: hidden;
     backface-visibility: hidden;
     box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
-    font-family: "Times New Roman", cursive;
+    font-family: 'Arial', cursive;
   }
   .block1 {
     background-image: var(--bg-image1);
@@ -480,7 +477,7 @@ header .profile-image {
     background-color: rgba(255, 255, 255, 0.9);
     border-top: 5px solid #D9D0C1;
     border-bottom: 5px solid #D9D0C1;
-    font-family: "Times New Roman", cursive;
+    font-family: 'Arial', cursive;
     padding: 18px;
     padding-left: 50px;
     bottom: 5px;
@@ -523,7 +520,7 @@ header .profile-image {
     border-bottom: 5px solid rgba(190, 158, 167, 0.9);
     color: #333;
     font-size: 13px;
-    font-family: "Times New Roman", cursive;
+    font-family: 'Arial', cursive;
     padding: 20px;
     width: 250px;
     margin: auto;
@@ -563,11 +560,15 @@ header .profile-image {
 }
 
 .content {
-   padding: 95px 80px 75px;;
-   margin: 0 auto;
-   display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    padding: 30px;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
     background-color: #f7f5f0;
-   font-family: Times New Roman;
+
 }
 
 .card {
@@ -586,7 +587,6 @@ header .profile-image {
    display: flex;
    justify-content: center;
    flex-direction: column;
-   cursor: pointer;
    padding:0;
    align-items: center;
  
@@ -601,12 +601,14 @@ header .profile-image {
    font-weight: 600;
    text-transform: uppercase;
    letter-spacing: 4px;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .card img{
    box-sizing: content-box;
    width: 85%;
-   height: auto; 
+   height: 70%; 
    display: block; 
 }
 .card .imga{
@@ -675,6 +677,14 @@ form {
   background: #CAB099;
 }
 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* CSS rules specific to WebKit browsers like Chrome and Safari */
+    .myname {
+     font-size: 2em; 
+    }
+}
+
 /* MOBİLE Responsive Layout Çalışması */
 @media screen and (max-width: 764px) {
 .index-text{
@@ -714,6 +724,7 @@ form {
 .flex {
   display: flex;
   flex-direction:column;
+  margin: 10px;
 }
 .navbar-container{
   display:none;}
@@ -742,29 +753,29 @@ ul.separator li:last-child::after {
   border-bottom: 1px solid white;
 }
 .display {
+
   flex-direction: column;
   margin-top: 50px;
   padding-bottom: 50px;
   gap: 20px;
+
 }
 .content {
   flex-direction: column;
   align-items: center;
 }
-.card:hover {
-  height: 110%;
-}
-.card:hover .info {
-  min-height: 100%;
- 
-}
-.card:hover .text-a {
-  transition: all 0.3s ease;
-  opacity: 1;
-  height: 110%;
-}
+
 .wrapper {
    height: 700px;
+}
+
+.display {
+   grid-template-columns: repeat(2, 1fr);
+
+}
+.content {
+    grid-template-columns: repeat(1, 0.5fr);
+    justify-content: center;
 }
 
 }
